@@ -35,7 +35,8 @@ header {
   padding-right: 1rem;
 }
 
-nav a {
+nav a,
+.menu a {
   color: white;
   padding-left: 2rem;
 }
@@ -135,4 +136,102 @@ footer img {
   padding-left: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+@media only screen and (min-width: 1024px){
+  .menu a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding-top: 0rem;
+  }
+  header {
+  height: 22rem;
+}
+  .headline {
+    margin-top: 5rem;
+    right: 2rem;
+  }
+  .headline span {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+  .menu a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .business-name {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  .menu a {
+    display: block;
+  }
+  .headline {
+    margin-top: 9rem;
+    justify-content: center;
+    right: 0rem;
+    width: 100%;
+  }
+  .headline span {
+    font-size: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .services-container {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .exams,
+  .fittings,
+  .delivery {
+    margin-top: 1.54rem;
+  }
+  .service-text {
+    font-size: 0.77rem;
+    padding-top: 1.5rem;
+  }
+  .about-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .philosophy,
+  .appointments {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .about-top {
+    width: 100%;
+  }
+  .about-top span {
+    display: block;
+    text-align: center;
+  }
+  .philosophy p,
+  .appointments p {
+    font-size: 0.77rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  footer span {
+    display: none;
+  }
+  
 }
