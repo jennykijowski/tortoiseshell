@@ -5,7 +5,8 @@ html {
 }
 
 header {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-image: url("/Users/jennykijowski/Desktop/Professional_Development/CodeAcademy/Tortoiseshell/resources/images/glasses-bg.png");
+  background-size: cover;
   height: 30rem;
 }
 
@@ -26,6 +27,7 @@ header {
 
 .branding {
   display: flex;
+  align-items: center;
 }
 
 .branding img {
@@ -41,6 +43,9 @@ nav a {
 .headline {
   position: relative;
   margin-top: 14rem;
+  right: -2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .headline span {
@@ -108,6 +113,11 @@ nav a {
   color: white;
   font-weight: bold;
   padding: 0.5rem 1.25rem;
+}
+
+.philosophy p,
+.appointments p {
+  padding-top: 1rem;
 }
 
 footer {
